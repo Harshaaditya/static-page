@@ -1,0 +1,232 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 30px;
+}
+
+:root{
+    --iconfont:1.8rem;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    color: white;
+    font-size: 1.3rem;
+}
+
+header .container {
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(210, 47, 255);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+#nav-image{
+    width: 85px;
+}
+nav ul li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+nav select{
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    width: fit-content;
+}
+
+.hero {
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    left: 0;top: 0;
+    width: 100%;height: 100%;
+    background-image: linear-gradient(to right bottom,rgba(68, 187, 230, 0.5),rgba(88, 60, 143,0.5));
+    display: block;
+    z-index: -1;
+}
+
+.hero video{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    transform-origin: center;
+    z-index: -2;
+}
+#headline{
+    text-align: center;
+    font-size: 3rem;
+}
+#countdown{
+    text-align: center;
+}
+#countdown ul li {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #0316e3;
+    border-radius: 10px;
+    width: fit-content;
+    color: white;
+    text-transform: capitalize;
+    font-size: 2rem;
+    text-align: center;
+    padding: 25px;
+}
+.number{
+    color: rgb(232, 198, 9);
+    font-weight: bolder;
+    font-size: 4rem;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+
+
+#Department .active{
+    color: black;
+    background-color: rgb(236, 205, 25);
+}
+
+section {
+    object-fit: cover;
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc;
+}
+#dept-l{
+    background-color: #0e1b4d;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    min-width: 30px;
+}
+#dept-l a{
+    color: white;
+}
+
+
+#speakers .container img{
+    width: 100%;
+}
+
+#about .container{
+    display: flex;
+}
+#about .container img{
+    width: 200px;
+}
+
+#confe:hover {
+    transform: scale(1.02);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+}
+
+.bullets ul h5 {
+  line-height: 1.5rem;
+  font-size: 17px;
+}
+
+h5 strong {
+  font-size: 18px;
+}
+
+
+
+footer{
+    background-color: rgb(57, 172, 214);
+    margin: 10px 0 0 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+footer ul{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+footer ul li{
+    text-align:center;
+    width: calc(var(--iconfont) + 15px);
+    border:1px solid black;
+    border-radius:20px;
+    font-size: var(--iconfont);
+}
+
+.social-accounts ul li a{
+    color: rgb(32, 218, 131);
+}
+
+.social-accounts ul li {
+    background-color: black;
+}
+
+@media (max-width: 600px) {
+
+  .comitee-mob{
+
+    font-size: 30px;
+    padding-bottom: 40px;
+  }
+
+
+}
+@media (width<=800px) {
+    #about .container{
+        flex-wrap: wrap;
+     }
+}
